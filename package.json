@@ -1,0 +1,33 @@
+{
+  "name": "fsensure",
+  "version": "1.1.2",
+  "description": "Ensure directories and files exists or that they are removed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doph/node-fsensure.git"
+  },
+  "keywords": [
+    "ensure",
+    "fs",
+    "mkdirp"
+  ],
+  "author": {
+    "name": "Akseli Palen",
+    "email": "akseli.palen@gmail.com",
+    "url": "http://akselipalen.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doph/node-fsensure/issues"
+  },
+  "dependencies": {
+    "mkdirp": "~0.3.5"
+  },
+  "devDependencies": {
+    "tap": "~0.4.4"
+  }
+}
