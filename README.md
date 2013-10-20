@@ -1,20 +1,18 @@
-fsensure
-========
+# fsensure
 
 Ensure directories and files exists or are removed in Node.js.
 
-Install
-=======
+## Install
 
-With [npm](http://npmjs.org) do:
+Using [npm](http://npmjs.org):
 
 ```
 npm install fsensure
 ```
 
-Examples
-========
-Create directories recursively like `mkdir -p`.
+##Examples
+
+Create directories recursively like `mkdir -p`:
 
 ```js
 var fsensure = require('fsensure');
@@ -25,7 +23,7 @@ fsensure.dir.exists('/tmp/foo/bar/baz', function (err) {
 });
 ```
 
-Move files around and automatically create the required directories.
+Move files around and automatically create the required directories:
 
 ```js
 var fsensure = require('fsensure');
@@ -36,44 +34,42 @@ fsensure.file.move('/tmp/info.txt', '/tmp/archive/info.md', function (err) {
 });
 ```
 
-API
-===
+## Methods
 
-## dir.exists(path, \[mode\], callback)
+### dir.exists(path, \[mode\], callback)
 
 Ensure that directory exists. If directory does not exist, try to create the directory in path. Understand the path as a path to directory.
 
-## dir.existsSync(path, \[mode\])
+### dir.existsSync(path, \[mode\])
 
 Sync version of fsensure.dir.exists.
 
-## file.move(source, target, callback)
+### file.move(source, target, callback)
 
 Alias of fsensure.file.rename.
 
-## file.rename(source, target, callback)
+### file.rename(source, target, callback)
 
 First ensures that the directories of the target filepath exists, creates the directories then renames the file.
 
-## file.dir.exists(filepath, callback)
+### file.dir.exists(filepath, callback)
 
 Ensures that the directories of filepath exist. Difference to dir.exists is that here filepath is understood as path to a non-directory file.
 
-## file.copy(source, target, callback)
+### file.copy(source, target, callback)
 
 Ensure that target path exists and copy the file.
 
-## file.remove(target, callback)
+### file.remove(target, callback)
 
 Alias of fsensure.file.unlink
 
-## file.unlink(target, callback)
+### file.unlink(target, callback)
 
 Ensure that target file is removed. Remove the file if possible.
 
-TODO
-====
+## TODO
 
 - more tests
-- accurate documentation
+- more comprehensive documentation
 - file.dir.existsSync
