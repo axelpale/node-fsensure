@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/doph/node-fsensure.git"
+    "url": "https://github.com/axelpale/node-fsensure.git"
   },
   "keywords": [
     "ensure",
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doph/node-fsensure/issues"
+    "url": "https://github.com/axelpale/node-fsensure/issues"
   },
   "dependencies": {
     "mkdirp": "~0.3.5"
